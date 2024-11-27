@@ -26,10 +26,14 @@ This project uses Puppeteer to monitor browser navigation events and evaluate wh
 2. Execute the script using Node.js:
 
    ```bash
-   node detect-browser.js
+   node script.js
    ```
 
 3. The script will open a browser window and navigate to `https://elgeniox.com/`. It will then wait for navigation events to detect specific pages (e.g., checkout or thank-you pages).
+
+### Note on Testing
+
+When running the script, it is very likely that you will need to log in to the retailer's website or create an account if you do not already have one. This is because actions such as adding products to the cart or proceeding to checkout typically require an active user session.
 
 ## Project Logic
 
@@ -71,6 +75,4 @@ This project uses Puppeteer to monitor browser navigation events and evaluate wh
   Browser detected: Google Chrome
   Program completed.
   ```
-
-
 
